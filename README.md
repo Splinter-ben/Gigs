@@ -1,4 +1,4 @@
-his NodeJS application allows to seach a developper Twith the language you are looking for
+This NodeJS application allows to seach a developper Twith the language you are looking for
 
 This app is using Sequelize to connect to a PostgreSQL database
 
