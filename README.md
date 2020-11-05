@@ -1,7 +1,13 @@
-## Sequelize APP with NodeJs & PostgreSQL
+This NodeJS application allows to seach ad developper with the language you are looking for
 
-# This Nodejs project help you to search a dev by his technologies
+This app is using Sequelize to connect to a PostgreSQL database
 
-$ change the variables into config/database to match your own
+To run the app in developpment mode
+```bash
+$ npm run dev
+```
 
-$ nodemon
+To run the app in production mode
+```bash
+$ npm run prod
+```

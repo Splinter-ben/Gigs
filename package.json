@@ -1,12 +1,15 @@
 {
   "name": "sequalize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon -r dotenv/config ./app.js",
+    "prod": "pm2 start --node-args='-r dotenv/config ./app.js --name app.js"
   },
-  "keywords": [],
+  "keywords": [
+    "SEQUILIZE"
+  ],
   "author": "Benjamin Champetier",
   "license": "MIT",
   "devDependencies": {
@@ -15,6 +18,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "morgan": "^1.10.0",
     "pg": "^7.7.1",
     "pg-hstore": "^2.3.2",
     "pm2": "^3.2.4",
